@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item - Campus Lost and Found</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="js/main.js" defer></script>
+    <script src="js/report.js" defer></script>
+    <link rel="icon" type="image/png" href="Src/Logo.jpg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Campus<span>Lost&Found</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="items.html">Lost Items</a></li>
+                    <li><a href="report.html" class="active">Report Item</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Report an Item</h1>
+                <p>Fill out the form below to report a lost or found item.</p>
+            </div>
+        </section>
+
+        <section class="report-form">
+            <div class="container">
+                <div class="form-tabs">
+                    <button class="tab-btn active" data-tab="lost">I Lost Something</button>
+                    <button class="tab-btn" data-tab="found">I Found Something</button>
+                </div>
+
+                <div class="tab-content active" id="lost-tab">
+                    <form id="lost-form" class="form">
+                        <div class="form-group">
+                            <label for="lost-item-name">Item Name*</label>
+                            <input type="text" id="lost-item-name" name="itemName" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lost-category">Category*</label>
+                                <select id="lost-category" name="category" required>
+                                    <option value="">Select a category</option>
+                                    <option value="electronics">Electronics</option>
+                                    <option value="clothing">Clothing</option>
+                                    <option value="accessories">Accessories</option>
+                                    <option value="books">Books & Notes</option>
+                                    <option value="ids">IDs & Cards</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lost-date">Date Lost*</label>
+                                <input type="date" id="lost-date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lost-location">Last Seen Location*</label>
+                            <input type="text" id="lost-location" name="location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lost-description">Description*</label>
+                            <textarea id="lost-description" name="description" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="lost-image">Upload Image (if available)</label>
+                            <input type="file" id="lost-image" name="image" accept="image/*">
+                        </div>
+                        <div class="form-divider"></div>
+                        <h3>Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lost-name">Your Name*</label>
+                                <input type="text" id="lost-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lost-email">Email*</label>
+                                <input type="email" id="lost-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lost-phone">Phone Number</label>
+                            <input type="tel" id="lost-phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit Report</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-content" id="found-tab">
+                    <form id="found-form" class="form">
+                        <div class="form-group">
+                            <label for="found-item-name">Item Name*</label>
+                            <input type="text" id="found-item-name" name="itemName" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="found-category">Category*</label>
+                                <select id="found-category" name="category" required>
+                                    <option value="">Select a category</option>
+                                    <option value="electronics">Electronics</option>
+                                    <option value="clothing">Clothing</option>
+                                    <option value="accessories">Accessories</option>
+                                    <option value="books">Books & Notes</option>
+                                    <option value="ids">IDs & Cards</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="found-date">Date Found*</label>
+                                <input type="date" id="found-date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="found-location">Location Found*</label>
+                            <input type="text" id="found-location" name="location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="found-description">Description*</label>
+                            <textarea id="found-description" name="description" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="found-image">Upload Image*</label>
+                            <input type="file" id="found-image" name="image" accept="image/*" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="found-current-location">Current Location of Item*</label>
+                            <select id="found-current-location" name="currentLocation" required>
+                                <option value="">Select location</option>
+                                <option value="with-me">With Me</option>
+                                <option value="lost-found-office">Turned in to Lost & Found Office</option>
+                                <option value="department-office">Left at Department Office</option>
+                                <option value="other">Other (specify in description)</option>
+                            </select>
+                        </div>
+                        <div class="form-divider"></div>
+                        <h3>Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="found-name">Your Name*</label>
+                                <input type="text" id="found-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="found-email">Email*</label>
+                                <input type="email" id="found-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="found-phone">Phone Number</label>
+                            <input type="tel" id="found-phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit Report</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips">
+            <div class="container">
+                <h2>Tips for Reporting</h2>
+                <div class="tips-grid">
+                    <div class="tip">
+                        <h3>Be Specific</h3>
+                        <p>Include as many details as possible about the item, such as brand, color, and any identifying marks.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Add Photos</h3>
+                        <p>If you have a photo of the item (or a similar one), upload it to help with identification.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Check Regularly</h3>
+                        <p>Keep checking the lost items page regularly, as new items are added daily.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Campus<span>Lost&Found</span></h2>
+                    <p>Helping students find what matters.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="items.html">Lost Items</a></li>
+                        <li><a href="report.html">Report Item</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>AmrutPoly Computer Department</p>
+                    <p>Email: lostandfound@campus.edu</p>
+                    <p>Phone: +91 9699050043</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Lost and Found. All rights reserved. KRUSHNA MENGAL & TEAM'S</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="success-message">
+                    <h2>Report Submitted Successfully!</h2>
+                    <p>Thank you for your report. We'll review it and get back to you soon.</p>
+                    <button class="btn btn-primary close-btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

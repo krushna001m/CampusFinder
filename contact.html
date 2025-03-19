@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Campus Lost and Found</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <link rel="icon" type="image/png" href="Src/Logo.jpg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Campus<span>Lost&Found</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="items.html">Lost Items</a></li>
+                    <li><a href="report.html">Report Item</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Have questions or feedback? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="images/location-icon.svg" alt="Location">
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>AmrutPoly Computer Department</p>
+                        <p>Open Monday-Friday, 9am-5pm</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="images/email-icon.svg" alt="Email">
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>lostandfound@campus.edu</p>
+                        <p>We respond within 24 hours</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <img src="images/phone-icon.svg" alt="Phone">
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Phone: +91 9699050043</p>
+                        <p>Available during office hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name*</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email*</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject*</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message*</label>
+                            <textarea id="contact-message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <h2>Find Us On Campus</h2>
+                    <div class="map">
+                        <!-- Replace with actual map embed code -->
+                        <img src="images/campus-map.jpg" alt="Campus Map">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How long do you keep found items?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We keep found items for 60 days. After that period, unclaimed items are donated to charity or disposed of according to university policy.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How do I prove an item is mine?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>You'll need to provide a detailed description of the item, including any identifying marks or features. For valuable items, we may ask for proof of ownership such as receipts, photos, or serial numbers.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Can I report a lost item if I'm not on campus?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, you can report lost items through our website or by calling our office. If your item is found, we can arrange for it to be shipped to you (shipping fees may apply).</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What happens if I find someone's ID or credit card?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>IDs and credit cards should be turned in immediately to the Lost and Found office or campus security. We have special procedures for handling these sensitive items and contacting their owners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Campus<span>Lost&Found</span></h2>
+                    <p>Helping students find what matters.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="items.html">Lost Items</a></li>
+                        <li><a href="report.html">Report Item</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>AmrutPoly Computer Department</p>
+                    <p>Email: lostandfound@campus.edu</p>
+                    <p>Phone: +91 9699050043</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Lost and Found. All rights reserved. KRUSHNA MENGAL & TEAM'S</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="success-message">
+                    <h2>Message Sent Successfully!</h2>
+                    <p>Thank you for contacting us. We'll get back to you as soon as possible.</p>
+                    <button class="btn btn-primary close-btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Items - Campus Lost and Found</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="js/main.js" defer></script>
+    <script src="js/items.js" defer></script>
+    <link rel="icon" type="image/png" href="Src/Logo.jpg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Campus<span>Lost&Found</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="items.html" class="active">Lost Items</a></li>
+                    <li><a href="report.html">Report Item</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Lost Items</h1>
+                <p>Browse through items that have been found on campus.</p>
+            </div>
+        </section>
+
+        <section class="items-search">
+            <div class="container">
+                <div class="search-filters">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search items...">
+                        <button id="search-button">Search</button>
+                    </div>
+                    <div class="filters">
+                        <div class="filter">
+                            <label for="category-filter">Category:</label>
+                            <select id="category-filter">
+                                <option value="all">All Categories</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="accessories">Accessories</option>
+                                <option value="books">Books & Notes</option>
+                                <option value="ids">IDs & Cards</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="filter">
+                            <label for="location-filter">Location:</label>
+                            <select id="location-filter">
+                                <option value="all">All Locations</option>
+                                <option value="library">Library</option>
+                                <option value="student-union">Student Union</option>
+                                <option value="science-building">Science Building</option>
+                                <option value="arts-center">Arts Center</option>
+                                <option value="gym">Gymnasium</option>
+                                <option value="cafeteria">Cafeteria</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="filter">
+                            <label for="date-filter">Date Found:</label>
+                            <select id="date-filter">
+                                <option value="all">All Time</option>
+                                <option value="today">Today</option>
+                                <option value="week">This Week</option>
+                                <option value="month">This Month</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="items-list">
+            <div class="container">
+                <div class="items-grid" id="items-grid">
+                    <!-- Items will be loaded dynamically with JavaScript -->
+                </div>
+                <div class="pagination">
+                    <button id="prev-page" disabled>Previous</button>
+                    <span id="page-info">Page 1 of 1</span>
+                    <button id="next-page">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="not-found">
+            <div class="container">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>If you don't see your item listed, you can report it as lost and we'll notify you if it turns up.</p>
+                <a href="report.html" class="btn btn-primary">Report Lost Item</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Campus<span>Lost&Found</span></h2>
+                    <p>Helping students find what matters.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="items.html">Lost Items</a></li>
+                        <li><a href="report.html">Report Item</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>AmrutPoly Computer Department</p>
+                    <p>Email: lostandfound@campus.edu</p>
+                    <p>Phone: +91 9699050043</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Lost and Found. All rights reserved. KRUSHNA MENGAL & TEAM'S</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Item Modal -->
+    <div class="modal" id="item-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
