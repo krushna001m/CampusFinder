@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'accessories',
             location: 'library',
             date: '2025-03-15',
-            image: 'images/items/backpack.jpg',
+            image: 'Src/BlueBackpack.png',
             description: 'A blue Jansport backpack with a laptop compartment and water bottle pocket.'
         },
         {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'ids',
             location: 'student-union',
             date: '2025-03-17',
-            image: 'images/items/id-card.jpg',
+            image: 'Src\StudentIDCard.webp',
             description: 'Student ID card for John Smith, ID #12345678.'
         },
         {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'other',
             location: 'gym',
             date: '2025-03-18',
-            image: 'images/items/water-bottle.jpg',
+            image: 'Src\WaterBottle.webp',
             description: 'A blue Hydro Flask water bottle with stickers on it.'
         },
         {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'electronics',
             location: 'science-building',
             date: '2025-03-19',
-            image: 'images/items/laptop-charger.jpg',
+            image: 'Src\LaptopCharger.webp',
             description: 'A MacBook Pro charger with USB-C connector.'
         },
         {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'books',
             location: 'library',
             date: '2025-03-16',
-            image: 'images/items/textbook.jpg',
+            image: 'Src\Textbook.jpg',
             description: 'Introduction to Psychology textbook, 5th edition.'
         },
         {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'accessories',
             location: 'arts-center',
             date: '2025-03-14',
-            image: 'images/items/umbrella.jpg',
+            image: 'Src\Umbrella.jpg',
             description: 'A black compact umbrella with automatic open/close.'
         },
         {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'accessories',
             location: 'cafeteria',
             date: '2025-03-13',
-            image: 'images/items/glasses.jpg',
+            image: 'Src\Glasses.webp',
             description: 'Black-rimmed prescription glasses in a blue case.'
         },
         {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'electronics',
             location: 'gym',
             date: '2025-03-12',
-            image: 'images/items/earbuds.jpg',
+            image: 'Src\WirelessEarbuds.webp',
             description: 'White wireless earbuds with charging case.'
         },
         {
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'clothing',
             location: 'student-union',
             date: '2025-03-11',
-            image: 'images/items/scarf.jpg',
+            image: 'Src\Scarf.jpg',
             description: 'A red and black plaid scarf.'
         },
         {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'electronics',
             location: 'science-building',
             date: '2025-03-10',
-            image: 'images/items/calculator.jpg',
+            image: 'Src\Calculator.jpg',
             description: 'TI-84 Plus graphing calculator.'
         },
         {
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'ids',
             location: 'cafeteria',
             date: '2025-03-09',
-            image: 'images/items/debit-card.jpg',
+            image: 'Src\DebitCard.webp',
             description: 'Chase debit card ending in 1234.'
         },
         {
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'books',
             location: 'library',
             date: '2025-03-08',
-            image: 'images/items/notebook.jpg',
+            image: 'Src\Notebook.webp',
             description: 'Spiral-bound notebook with blue cover, contains biology notes.'
         }
     ];
