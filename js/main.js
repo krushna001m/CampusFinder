@@ -140,7 +140,7 @@ function loadRecentItems() {
             category: 'Accessories',
             location: 'Library, 2nd Floor',
             date: '2025-03-15',
-            image: 'images/items/backpack.jpg'
+            image: 'Src\BlueBackpack.png'
         },
         {
             id: 2,
@@ -148,7 +148,7 @@ function loadRecentItems() {
             category: 'IDs & Cards',
             location: 'Student Union',
             date: '2025-03-17',
-            image: 'images/items/id-card.jpg'
+            image: 'Src\StudentIDCard.webp'
         },
         {
             id: 3,
@@ -156,7 +156,7 @@ function loadRecentItems() {
             category: 'Other',
             location: 'Gymnasium',
             date: '2025-03-18',
-            image: 'images/items/water-bottle.jpg'
+            image: 'Src\WaterBottle.webp'
         },
         {
             id: 4,
@@ -164,7 +164,7 @@ function loadRecentItems() {
             category: 'Electronics',
             location: 'Science Building',
             date: '2025-03-19',
-            image: 'images/items/laptop-charger.jpg'
+            image: 'Src\LaptopCharger.webp'
         }
     ];
     
