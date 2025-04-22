@@ -33,11 +33,3 @@ git clone https://github.com/krushna001m/CampusLost-Found.git
 2. Open `index.html` in your browser.  
 3. Report or browse items seamlessly!  
 
-## 👨‍💻 Contributing
-Feel free to fork the repository and submit a pull request.
-
-## 📄 License
-This project is licensed under the **MIT License**.
-
----
-
