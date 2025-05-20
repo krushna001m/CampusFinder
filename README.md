@@ -33,3 +33,7 @@ git clone https://github.com/krushna001m/CampusLost-Found.git
 2. Open `index.html` in your browser.  
 3. Report or browse items seamlessly!  
 
+## 👨‍💻 Author
+
+* **Krushna Mengal**
+  GitHub: [@krushna001m](https://github.com/krushna001m)
