@@ -1,9 +1,14 @@
-# CampusFinder 
+# 🧭🎓 CampusFinder – Smart College Navigation Web App
+ 
 
 A web-based platform to help students and staff report and recover lost items on campus. The platform allows users to report lost or found items, browse listings, and contact the reporter to return items.
 
 ## 🌍 Live Demo
 👉 [**View Project**](https://krushna001m.github.io/CampusFinder/)  
+
+## 🎯 Purpose of project
+CampusFinder is a smart web application designed to help students, visitors, and staff easily navigate a college or university campus. It provides interactive maps, building information, and smart search features to locate departments, classrooms, facilities, and events — all in one place. The goal is to simplify campus exploration and improve accessibility using modern web technologies.
+
 
 ## 🚀 Features
 - Report lost and found items.
