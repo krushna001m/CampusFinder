@@ -1,4 +1,4 @@
-# 🧭🎓 CampusFinder – Smart College Navigation 
+# 🧭🎓 CampusFinder – Smart College Navigation Web App
  
 A web-based platform to help students and staff report and recover lost items on campus. The platform allows users to report lost or found items, browse listings, and contact the reporter to return items.
 
